@@ -1,4 +1,7 @@
-package medium;// 39. Combination Sum
+package medium;
+
+// 39. Combination Sum
+
 
 //Input: candidates = [2,3,5], target = 8
 //Output: [[2,2,2,2],[2,3,3],[3,5]]
@@ -11,6 +14,8 @@ package medium;// 39. Combination Sum
 //These are the only two combinations.
 
 import java.util.*;
+
+// include multiple times of i, so it is fixed no change
 
 public class CombinationSum {
     public static void main(String[] args) {
