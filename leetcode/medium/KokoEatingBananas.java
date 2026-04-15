@@ -35,13 +35,13 @@ public class KokoEatingBananas {
         while(start <= end) {
             int mid = start + (end - start) / 2;
 
-            long hours = 0;
+            long totalHours = 0;
 
             for(int pile : arr) {
-                hours += (pile + mid - 1) / mid;
+                totalHours += (pile + mid - 1) / mid;
             }
 
-            if(hours <= h) {
+            if(totalHours <= h) {
                 ans = mid;
                 end = mid - 1;
             } else {
