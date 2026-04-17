@@ -33,11 +33,11 @@ import java.util.Arrays;
 
 public class PlusOne {
     public static void main(String[] args) {
-        int[] digits = {9,9,9,9};
+        int[] digits = {9,9,8,9,9};
         System.out.println(Arrays.toString(plusOne(digits)));
     }
 
-    static int[] plusOne(int[] digits) {
+    static int[] plusOne(int[] digits) {    // 9,9,9,0,0
         for(int i=digits.length-1; i>=0; i--) {         // check from last
             if(digits[i] < 9) {
                 digits[i]++;        // here increment value not index
