@@ -17,10 +17,10 @@ package easy;
 //Output: false
 //Explanation: There is no cycle in the linked list.
 
-class ListNode2 {
+class ListNode4 {
     int val;
-    ListNode2 next;
-    ListNode2(int x) {
+    ListNode4 next;
+    ListNode4(int x) {
         val = x;
         next = null;
     }
@@ -30,19 +30,19 @@ class ListNode2 {
 public class LinkedListCycle {
 
     public static void main(String[] args) {
-        ListNode2 head = new ListNode2(1);
-        head.next = new ListNode2(2);
-        head.next.next = new ListNode2(4);
+        ListNode4 head = new ListNode4(1);
+        head.next = new ListNode4(2);
+        head.next.next = new ListNode4(4);
         head.next.next.next = head.next;
 
         System.out.println(hasCycle(head));
     }
 
-    static boolean hasCycle(ListNode2 head) {
+    static boolean hasCycle(ListNode4 head) {
         if (head == null) return false;
 
-        ListNode2 slow = head;
-        ListNode2 fast = head;
+        ListNode4 slow = head;
+        ListNode4 fast = head;
 
         while (fast != null && fast.next != null) {
             slow = slow.next;          // 1 step

@@ -3,16 +3,6 @@ package easy;
 // 83. Remove Duplicates from Sorted List
 
 
-class ListNode {
-    int data;
-    Node next;
-
-    ListNode(int data) {
-        this.data = data;
-        this.next = null;
-    }
-}
-
 public class RemoveDuplicatesFromSortedList {
     public static void main(String[] args) {
         Node head = new Node(1);
