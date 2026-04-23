@@ -19,7 +19,7 @@ import java.util.*;
 public class ContainsDuplicate2 {
     public static void main(String[] args) {
         int[] nums = {1,2,3,1};
-        int k = 0;
+        int k = 3;
 
         System.out.println(containsNearbyDuplicate(nums, k));
     }
