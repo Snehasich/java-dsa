@@ -12,7 +12,6 @@ package medium;
 //Input: nums = [0,1,0,1,0,1,99]
 //Output: 99
 
-
 public class SingleNumber2 {
     public static void main(String[] args) {
         int[] nums = {2,2,3,2};
