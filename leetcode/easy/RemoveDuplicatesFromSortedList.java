@@ -26,12 +26,12 @@ public class RemoveDuplicatesFromSortedList {
     }
 
     static Node deleteDuplicates(Node head) {
-        Node current = head;
-        while(current != null && current.next != null) {
-            if(current.val == current.next.val ) {
-                current.next = current.next.next;
+        Node node = head;
+        while(node != null && node.next != null) {
+            if(node.val == node.next.val) {
+                node.next = node.next.next;
             } else {
-                current = current.next;
+                node = node.next;
             }
         }
 
