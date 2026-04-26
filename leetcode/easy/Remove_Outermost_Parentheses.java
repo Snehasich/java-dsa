@@ -25,7 +25,9 @@ package easy;
 //The input string is "()()", with primitive decomposition "()" + "()".
 //After removing outer parentheses of each part, this is "" + "" = "".
 
-import java.util.*;
+
+
+
 public class Remove_Outermost_Parentheses {
     public static void main(String[] args) {
         String s = "(()())(())";
