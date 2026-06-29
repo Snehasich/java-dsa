@@ -1,0 +1,67 @@
+camel case -> function and variable name    (TomAndJerry)
+
+Example :
+    public class StudentDetails {      // PascalCase  ->  Classes, Interfaces, Enums
+
+        static final int MAX_MARKS = 100;   // UPPER_SNAKE_CASE  ->  Constants (static final)
+
+        String studentName;                 // camelCase  ->  Variables and methods
+
+        void calculateTotalMarks() {        // camelCase
+            System.out.println(studentName);
+        }
+    }
+
+
+keywords
+byte -> 1 byte -> 8 bits
+short -> 2 byte
+int -> 4 byte
+long -> 8 byte
+
+
+
+JDK ->  JRE + JVM + others
+
+JDK → Used by developers to write, compile, and run Java programs.
+JRE → Used by users to run Java programs.
+JVM → Actually executes the compiled Java bytecode.
+
+JDK = Development Kit (JRE + tools).
+JRE = Runtime Environment (JVM + libraries).
+JVM = Executes Java bytecode.
+JIT = Improves performance by compiling bytecode to native machine code during execution.
+JAR = Packages Java applications into a single file.
+JDBC = Connects Java programs to databases.
+
+
+Interpreter (Simple Definition):
+    An interpreter is a program that reads your code and executes it one instruction at a time, instead of converting the entire program into machine code beforehand.
+    example : 🎤 Speaker says one sentence.
+               🗣️ Interpreter immediately translates that sentence.
+               🎤 Speaker says the next sentence.
+               🗣️ Interpreter translates it.
+    The interpreter works line by line, not all at once.
+        System.out.println("Hello");
+        System.out.println("World");
+
+
+HEAP -> Heap is the memory area where objects and instance variables are stored.
+
+Java → Originally created by Sun Microsystems.
+Sun Microsystems was acquired by Oracle Corporation in 2010.
+OpenJDK → The open-source implementation of Java.
+Temurin → A free, high-quality build of OpenJDK provided by the Eclipse Adoptium project.
+Catelog -> is an organized list of items or a collection of information.
+Maven -> Maven is a build automation and dependency management tool for Java projects.
+         You simply add the dependency to a file called pom.xml
+
+
+
+To find average we use : x + (y - x) / 2            No overflow happens because y - x is small, safest to use
+
+sum of n natural numbers : n * (n+1) / 2
+
+
+Amazon -> find all primes from 1 to m
+ques -> sieme of erathosnese
