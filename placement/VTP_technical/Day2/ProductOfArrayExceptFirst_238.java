@@ -4,7 +4,6 @@ package VTP_technical.Day2;
 
 import java.util.*;
 
-
 public class ProductOfArrayExceptFirst_238 {
 
     public static void main(String[] args) {
