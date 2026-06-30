@@ -1,4 +1,4 @@
-package VTP_technical;
+package VTP_technical.Day1;
 
 public class SumOfRange {
     public static void main(String[] args) {
@@ -15,8 +15,8 @@ public class SumOfRange {
         // S = n / 2 * (a+l)
         // n = l - a + 1
 
-        int n = y - x;
-        int formula = n * (n + 1) / 2;
+        int n = y - x + 1;
+        int formula = n * (x + y) / 2;
 
         return formula;
     }

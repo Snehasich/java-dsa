@@ -1,4 +1,4 @@
-package VTP_technical;
+package VTP_technical.Day1;
 
 // An Armstrong number (also called a Narcissistic number) is a number that is equal to the sum of its own digits,
 // where each digit is raised to the power of the number of digits.

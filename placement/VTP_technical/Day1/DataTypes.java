@@ -1,4 +1,4 @@
-package VTP_technical;
+package VTP_technical.Day1;
 
 public class DataTypes {
     public static void main(String[] args) {

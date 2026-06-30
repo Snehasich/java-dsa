@@ -65,3 +65,29 @@ sum of n natural numbers : n * (n+1) / 2
 
 Amazon -> find all primes from 1 to m
 ques -> sieme of erathosnese
+
+
+
+Object
+hash -> properties
+does -> functionality
+
+
+instance --> is an object created from class
+String --> set of character, immutable
+
+==   --> compare string object
+
+
+String s = new Scanner(System.in).nextLine();
+
+
+
+Arrays
+    -> arrays are objects
+    -> they have fixed size once declared can't shrink or extended
+    -> THey are homogeneous, the element is of same type
+    -> They are indexed, so elements can be easily accessed in O(1) via indexes
+
+
+question -> find product in matrix 2d array

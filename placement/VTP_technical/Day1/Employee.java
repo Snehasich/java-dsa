@@ -1,4 +1,4 @@
-package VTP_technical;
+package VTP_technical.Day1;
 
 public class Employee {
     String fullName;
@@ -36,7 +36,7 @@ public class Employee {
         System.out.println(emp.getFullName());
         System.out.println(emp.getEmpId());
         System.out.println(emp);    // print address of the class
-        // VTP_technical.Employee@3f99bd52 -> VTP_technical → Package name, Employee → Class name, @ -> Just a separator used by Java's default toString() method.
+        // VTP_technical.Day1.Employee@3f99bd52 -> VTP_technical → Package name, Employee → Class name, @ -> Just a separator used by Java's default toString() method.
         //3f99bd52 -> The object's hash code in hexadecimal.
     }
 }

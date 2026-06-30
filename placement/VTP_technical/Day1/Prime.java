@@ -1,21 +1,17 @@
-package VTP_technical;
+package VTP_technical.Day1;
 
 public class Prime {
     public static void main(String[] args) {
-        int n = 1566;
+        int n = 10000;
 
         System.out.println(prime(n));
 
-        System.out.println("Prime Range from 0 to n : ");
-        for (int i = 2; i * i <= n; i++) {
-            if (prime(i)) {
-                System.out.print(i + " ");
-            }
-        }
+        System.out.print("Prime Range from 0 to n : ");
+        checkRange(n);
     }
 
     static boolean prime(int n) {
-        if(n < 2) {
+        if(n == 1) {
             return false;
         }
         for(int i = 2; i <= Math.sqrt(n); i++) {
@@ -25,5 +21,13 @@ public class Prime {
         }
 
         return true;
+    }
+
+    static void checkRange(int n) {
+        for (int i = 2; i * i <= n; i++) {
+            if (prime(i)) {
+                System.out.print(i + " ");
+            }
+        }
     }
 }
