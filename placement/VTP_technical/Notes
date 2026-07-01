@@ -91,3 +91,58 @@ Arrays
 
 
 question -> find product in matrix 2d array
+
+short circuit in java
+
+
+
+homework -> 34 leetcode, 33, 2812
+
+
+Constructors
+    -> look like functions but they are not exactly same
+    -> their name should exactly match of class name
+    -> don't have return type
+    -> they are invoked/called/triggered automatically while object creation
+    -> You can't invoked again soon after object creation
+    A constructor in Java is a special method used to initialize an object.
+    It is called automatically when an object is created using the new keyword.
+
+
+Types of constructors:
+    Default constructor –> No parameters.
+    Parameterized constructor –> Takes parameters to initialize objects.
+
+
+Wrapper Classes
+    -> wrapper class is a class that converts a primitive data type into an object.
+
+    int num = 10;
+
+    // Autoboxing (primitive to object)
+    Integer obj = num;
+
+    // Unboxing (object to primitive)
+    int value = obj;
+
+    System.out.println(value);
+
+
+
+
+Collections   (V IMP)
+    -> Collections in Java are a framework used to store and manage groups of objects dynamically.
+    -> It provides classes and interfaces for efficient data storage and manipulation.
+    -> set of classes and interfaces used to store, organize, and manipulate groups of objects efficiently.
+
+ArrayList
+    O(1) time complexity -> Arrays and ArrayList
+    if "adding at the end" at arraylist is also O(1)
+    if "added in the start" it will be linear -> O(n)     (It shifts all elements to right)
+    for "searching" the elements it is linear -> O(n)
+
+
+Generics
+    Generics allow you to write classes, interfaces, and methods that work with different data types while providing type safety.
+    Eg :- ArrayList<Integer> numbers = new ArrayList<>();
+    here only we can use integer type
