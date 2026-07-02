@@ -96,7 +96,7 @@ short circuit in java
 
 
 
-homework -> 34 leetcode, 33, 2812
+HOMEWORK -> 34 leetcode, 33, 2812
 
 
 Constructors
@@ -146,3 +146,70 @@ Generics
     Generics allow you to write classes, interfaces, and methods that work with different data types while providing type safety.
     Eg :- ArrayList<Integer> numbers = new ArrayList<>();
     here only we can use integer type
+
+
+
+Day 4
+
+HOMEWORK ->  162 leetcode find peak element
+
+
+Interface contain only abstract function
+
+
+Hash
+    -> easy to understand, its one way
+    -> it given random data
+    -> converting data into an integer value
+    -> it can store and retrieve efficiently
+        SHA256
+
+
+HashSet
+    -> Contains unique elements, no duplicates
+    -> inserting -> O(1)     almost constant time
+    -> searching -> O(1)
+    -> there is no index
+    -> can't Sort
+
+
+PriorityQueue
+    -> it's min heap
+    -> always removes the highest-priority element first.
+    -> By default, the smallest element has the highest priority (min-heap).
+
+    2 types
+        1. min heap -> smallest element is always at the root(first position).
+        2. max heap -> largest element is always at the root(first position).
+
+
+
+HOMEWORK -> Leetcode 1985  ->  https://leetcode.com/problems/find-the-kth-largest-integer-in-the-array/description/
+
+HOMEWORK -> Design own queue array that can add elements and remove elements
+
+HOMEWORK -> Design own stack also add and all
+
+
+
+ArrayDeque
+    -> resizable array implementation of the Deque (Double-Ended Queue) interface.
+    -> Deque allows insertion and deletion from both the front and the rear.
+    -> It allows insertion and deletion from both ends.
+    -> Can be used as both a Queue (FIFO) and a Stack (LIFO).
+    -> Does not allow null elements.
+
+
+HashMap
+    -> Key value pairs
+    -> should be immutable
+    -> keys should be immutable objects
+    -> keys are hashed, and can't be duplicate
+    -> Values can be anything
+    -> O(N)
+
+
+    ** LOOP we USE here for hashmap, because we don't have index in hashmap **
+    for (Map.Entry<Integer, String> entry : map.entrySet()) {       // map.entrySet() -> all key-value pairs.
+        System.out.println(entry.getKey() + " : " + entry.getValue());
+    }
