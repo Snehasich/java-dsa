@@ -1,23 +1,30 @@
 package VTP_technical;
 
-import java.util.TreeSet;
+import java.util.*;
 
 class SecondLargestNumber {
     public static void main(String[] args) {
 
-        int[] arr = {5, 2, 4, 1, 3};
+        int[] arr = {10, 20, 30, 40, 50};
+        int k = 2;
 
-        TreeSet<Integer> ts = new TreeSet<>();
+        System.out.println(Arrays.toString(arr));
+        reverse(arr, 0,  arr.length - 1);
+        reverse(arr, 0, k-1);
+        reverse(arr, k, arr.length - 1);
+        System.out.println(Arrays.toString(arr));
+    }
 
-        // Add elements to TreeSet
-        for (int num : arr) {
-            ts.add(num);
+    static int[] reverse(int[] arr, int left, int right) {
+        while (left < right) {
+            int temp = arr[left];
+            arr[left] = arr[right];
+            arr[right] = temp;
+
+            left++;
+            right--;
         }
 
-        // Remove the largest element
-        ts.pollLast();
-
-        // Now the last element is the second largest
-        System.out.println("Second Largest Number is: " + ts.last());
+        return arr;
     }
 }

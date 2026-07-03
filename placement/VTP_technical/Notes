@@ -213,3 +213,21 @@ HashMap
     for (Map.Entry<Integer, String> entry : map.entrySet()) {       // map.entrySet() -> all key-value pairs.
         System.out.println(entry.getKey() + " : " + entry.getValue());
     }
+
+
+
+Linked List
+    -> Linear Data Structure
+    -> Collection of Nodes connected using pointers
+    -> Each Node contains Data and Next Pointer
+    -> Head -> First Node
+    -> Tail -> Last Node
+    -> Dynamic size (No fixed size)
+    -> Memory is allocated dynamically
+    -> Fast insertion and deletion
+    -> Slow random access (No indexing)
+    -> Search takes O(N)
+    -> Types -> Singly, Doubly, Circular Linked List
+    -> Used in Stack, Queue, Graph, HashMap (Chaining)
+    -> Last node points to NULL (except Circular Linked List)
+    -> Best when frequent insertion and deletion are required
