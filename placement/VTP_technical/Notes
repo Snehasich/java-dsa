@@ -231,3 +231,39 @@ Linked List
     -> Used in Stack, Queue, Graph, HashMap (Chaining)
     -> Last node points to NULL (except Circular Linked List)
     -> Best when frequent insertion and deletion are required
+
+// floyd's algorithm
+// ** Cyclic linked list uses Fast and Slow pointers **
+
+
+
+// HOMEWORK -> Leetcode 19, 2
+
+
+Recursion
+    -> function calls itself
+    -> used Stack here
+    -> uses Base Condition
+    -> time complexity - O(2^N)
+    -> reuse it
+
+// Learn -> Merge sort and Bubble sort
+
+
+Binary Tree
+    -> first node is -> root node
+    -> node can have 2 children
+    -> end notes -> leaf nodes
+    -> level by level 1,2,3
+
+    3 types of traversal
+    -> preorder  ->  root, left, right
+    -> inorder   ->  left, root, right
+    -> postorder ->  left, right, root
+
+
+// HOMEWORK -> Leetcode 515, 637
+
+
+
+Trie -> leetcode 208
