@@ -5,26 +5,27 @@ import java.util.*;
 class SecondLargestNumber {
     public static void main(String[] args) {
 
-        int[] arr = {10, 20, 30, 40, 50};
-        int k = 2;
+        String[] nums = {"3","6","7","10"};
+        int k = 4;
 
-        System.out.println(Arrays.toString(arr));
-        reverse(arr, 0,  arr.length - 1);
-        reverse(arr, 0, k-1);
-        reverse(arr, k, arr.length - 1);
-        System.out.println(Arrays.toString(arr));
+        System.out.println(kthLargestNumber(nums, k));
     }
 
-    static int[] reverse(int[] arr, int left, int right) {
-        while (left < right) {
-            int temp = arr[left];
-            arr[left] = arr[right];
-            arr[right] = temp;
+    static String kthLargestNumber(String[] nums, int k) {
+        String ans = "";
 
-            left++;
-            right--;
+        int[] intArr = new int[nums.length];
+
+        for (int i = 0; i < nums.length; i++) {
+            intArr[i] = Integer.parseInt(nums[i]);
         }
 
-        return arr;
+        for(int i = k-1; i >= 0; i--){
+            ans = nums[i];
+        }
+
+        System.out.println(Arrays.toString(intArr));
+
+        return ans;
     }
 }
