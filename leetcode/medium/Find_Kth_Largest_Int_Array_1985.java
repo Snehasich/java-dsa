@@ -20,4 +20,5 @@ public class Find_Kth_Largest_Int_Array_1985 {
         });
 
         return nums[nums.length - k];
-    }}
+    }
+}
