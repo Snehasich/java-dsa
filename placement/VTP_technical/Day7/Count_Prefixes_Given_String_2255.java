@@ -12,8 +12,8 @@ public class Count_Prefixes_Given_String_2255 {
     static int countPrefixes(String[] words, String s) {
         int count = 0;
 
-        for (int i = 0; i < s.length(); i++) {
-            if (s.charAt(i) == 'a') {
+        for (int i = 0; i < words.length; i++) {
+            if(s.startsWith(words[i])) {
                 count++;
             }
         }

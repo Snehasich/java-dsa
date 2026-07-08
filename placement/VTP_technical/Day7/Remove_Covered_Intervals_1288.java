@@ -14,7 +14,7 @@ public class Remove_Covered_Intervals_1288 {
 
     static int removeCoveredIntervals(int[][] intervals) {
 
-        int covered = 0;
+        int count = 0;
 
         for (int i = 0; i < intervals.length; i++) {
             boolean isCovered = false;
@@ -29,10 +29,10 @@ public class Remove_Covered_Intervals_1288 {
             }
 
             if (isCovered) {
-                covered++;
+                count++;
             }
         }
 
-        return intervals.length - covered;
+        return intervals.length - count;
     }
 }

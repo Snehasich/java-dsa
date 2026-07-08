@@ -11,15 +11,25 @@ public class Trapping_Rain_Water_42 {
 
     static int trap(int[] arr) {
         int ans = 0;
-        int min = 0;
+        int left = 0;
+        int right = arr.length - 1;
 
-        for (int i = 1; i < arr.length; i++) {
-            if (arr[i] > arr[i-1]) {
-                for (int j = 0; j <= i; j++) {
-                    min += arr[j];
+        int leftmax = 0;
+        int rightmax = 0;
+
+        while(left < right) {
+            if(arr[left] < arr[right]) {
+                if(arr[left] > leftmax) {
+                    leftmax = arr[left];
                 }
-                ans = Math.max(ans, min);
-
+                ans += leftmax - arr[left];
+                left++;
+            } else {
+                if(arr[right] > rightmax) {
+                    rightmax = arr[right];
+                }
+                ans += rightmax - arr[right];
+                right--;
             }
         }
 

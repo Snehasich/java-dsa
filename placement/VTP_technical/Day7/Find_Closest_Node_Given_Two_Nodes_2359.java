@@ -9,6 +9,6 @@ public class Find_Closest_Node_Given_Two_Nodes_2359 {
     }
 
     static int closestMeetingNode(int[] edges, int node1, int node2) {
-
+        return 0;
     }
 }
