@@ -267,6 +267,7 @@ Binary Tree
 
 
 Trie -> leetcode 208
+    -> Trie is built exactly for prefix searching.
 
 
 leetcode 11, 1288       * Super Important *
