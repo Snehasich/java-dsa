@@ -29,6 +29,32 @@ public class Max_Number_KSum_Pairs_1679 {
         System.out.println(maxOperations(nums, k));
     }
 
+//    static int maxOperations(int[] nums, int k) {
+//        ArrayList<Integer> list = new ArrayList<>();
+//        int count = 0;
+//
+//        for(int i = 0; i < nums.length; i++) {
+//            list.add(nums[i]);
+//        }
+//        System.out.println(list);
+//
+//        for(int i = 0; i < list.size(); i++) {
+//            for(int j = i + 1; j < list.size(); j++) {
+//                if(list.get(i) + list.get(j) == k) {
+//                    count++;
+//                    list.remove(j);
+//                    list.remove(i);
+//                    i = -1;           // because the for-loop will do i++
+//                    break;
+//                }
+//            }
+//        }
+//
+//        return count;
+//    }
+
+
+
     static int maxOperations(int[] nums, int k) {
         Arrays.sort(nums);
 
