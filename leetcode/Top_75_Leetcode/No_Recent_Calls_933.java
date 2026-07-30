@@ -37,7 +37,7 @@ class RecentCounter {
     }
 }
 
-public class No_Recent_Calls {
+public class No_Recent_Calls_933 {
     public static void main(String[] args) {
         RecentCounter counter = new RecentCounter();
 
