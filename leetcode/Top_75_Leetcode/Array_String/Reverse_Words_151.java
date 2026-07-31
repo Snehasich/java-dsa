@@ -1,4 +1,4 @@
-package Top_75_Leetcode;
+package Top_75_Leetcode.Array_String;
 
 // https://leetcode.com/problems/reverse-words-in-a-string/?envType=study-plan-v2&envId=leetcode-75
 

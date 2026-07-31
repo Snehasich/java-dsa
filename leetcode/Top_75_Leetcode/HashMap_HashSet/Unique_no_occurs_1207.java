@@ -1,4 +1,4 @@
-package Top_75_Leetcode;
+package Top_75_Leetcode.HashMap_HashSet;
 
 // https://leetcode.com/problems/unique-number-of-occurrences/description/?envType=study-plan-v2&envId=leetcode-75
 

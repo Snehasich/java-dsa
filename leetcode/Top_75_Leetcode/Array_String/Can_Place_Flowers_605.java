@@ -1,4 +1,4 @@
-package Top_75_Leetcode;
+package Top_75_Leetcode.Array_String;
 
 // https://leetcode.com/problems/can-place-flowers/description/?envType=study-plan-v2&envId=leetcode-75
 

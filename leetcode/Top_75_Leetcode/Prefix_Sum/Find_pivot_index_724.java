@@ -1,4 +1,4 @@
-package Top_75_Leetcode;
+package Top_75_Leetcode.Prefix_Sum;
 
 // https://leetcode.com/problems/find-pivot-index/description/?envType=study-plan-v2&envId=leetcode-75
 

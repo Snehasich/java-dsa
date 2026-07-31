@@ -1,4 +1,4 @@
-package Top_75_Leetcode;
+package Top_75_Leetcode.Sliding_Window;
 
 // https://leetcode.com/problems/maximum-average-subarray-i/description/?envType=study-plan-v2&envId=leetcode-75
 

@@ -1,4 +1,4 @@
-package Top_75_Leetcode;
+package Top_75_Leetcode.Two_Pointers;
 
 // https://leetcode.com/problems/max-number-of-k-sum-pairs/description/?envType=study-plan-v2&envId=leetcode-75
 
@@ -18,7 +18,6 @@ package Top_75_Leetcode;
 //There are no more pairs that sum up to 6, hence a total of 1 operation.
 
 
-import java.util.ArrayList;
 import java.util.Arrays;
 
 public class Max_Number_KSum_Pairs_1679 {

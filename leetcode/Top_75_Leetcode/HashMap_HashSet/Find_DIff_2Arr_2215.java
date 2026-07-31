@@ -1,4 +1,4 @@
-package Top_75_Leetcode;
+package Top_75_Leetcode.HashMap_HashSet;
 
 // https://leetcode.com/problems/find-the-difference-of-two-arrays/description/?envType=study-plan-v2&envId=leetcode-75
 

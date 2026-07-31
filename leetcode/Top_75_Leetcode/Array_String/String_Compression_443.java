@@ -1,4 +1,4 @@
-package Top_75_Leetcode;
+package Top_75_Leetcode.Array_String;
 
 // https://leetcode.com/problems/string-compression/description/?envType=study-plan-v2&envId=leetcode-75
 
@@ -18,8 +18,6 @@ package Top_75_Leetcode;
 //Input: chars = ["a","b","b","b","b","b","b","b","b","b","b","b","b"]
 //Output: 4
 
-
-import java.util.HashSet;
 
 public class String_Compression_443 {
     public static void main(String[] args) {

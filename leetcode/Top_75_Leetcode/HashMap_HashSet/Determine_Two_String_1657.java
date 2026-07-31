@@ -1,4 +1,4 @@
-package Top_75_Leetcode;
+package Top_75_Leetcode.HashMap_HashSet;
 
 // https://leetcode.com/problems/determine-if-two-strings-are-close/description/?envType=study-plan-v2&envId=leetcode-75
 
@@ -16,7 +16,6 @@ package Top_75_Leetcode;
 
 
 import java.util.Arrays;
-import java.util.HashSet;
 
 public class Determine_Two_String_1657 {
     public static void main(String[] args) {

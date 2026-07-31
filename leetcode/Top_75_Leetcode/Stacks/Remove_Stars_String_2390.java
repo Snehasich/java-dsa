@@ -1,4 +1,4 @@
-package Top_75_Leetcode;
+package Top_75_Leetcode.Stacks;
 
 // https://leetcode.com/problems/removing-stars-from-a-string/description/?envType=study-plan-v2&envId=leetcode-75
 
@@ -16,8 +16,6 @@ package Top_75_Leetcode;
 //Output: ""
 //Explanation: The entire string is removed, so we return an empty string.
 
-
-import java.util.Stack;
 
 public class Remove_Stars_String_2390 {
     public static void main(String[] args) {
