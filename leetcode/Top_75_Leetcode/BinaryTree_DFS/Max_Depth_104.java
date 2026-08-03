@@ -10,7 +10,7 @@ class TreeNode {
     }
 }
 
-public class Max_Depth {
+public class Max_Depth_104 {
     public static void main(String[] args) {
 
         /*
@@ -30,7 +30,7 @@ public class Max_Depth {
         root.right.left = new TreeNode(15);
         root.right.right = new TreeNode(7);
 
-        Max_Depth obj = new Max_Depth();
+        Max_Depth_104 obj = new Max_Depth_104();
 
         System.out.println("Maximum Depth = " + obj.maxDepth(root));
     }
