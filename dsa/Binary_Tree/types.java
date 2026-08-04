@@ -39,7 +39,7 @@ public class types {
         System.out.print("\nInOrder : ");      // O(N)      Left - Root - Right
         inorder(root);
 
-        System.out.print("\nPostOrder : ");      // O(N)      Left - Root - Right
+        System.out.print("\nPostOrder : ");      // O(N)      Left - Right - Root
         postorder(root);
     }
 
