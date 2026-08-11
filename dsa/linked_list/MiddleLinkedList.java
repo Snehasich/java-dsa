@@ -1,4 +1,4 @@
-package dsa.linkedlist;
+package linkedlist;
 
 // Middle of the Linked List – LeetCode 876
 

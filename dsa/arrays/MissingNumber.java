@@ -1,4 +1,6 @@
-package arrays;// AMAZON
+package arrays;
+
+// AMAZON
 
 import java.util.Arrays;
 

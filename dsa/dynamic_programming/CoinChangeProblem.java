@@ -1,4 +1,6 @@
-package dsa.dp;// input,  coins[] = {1,2,3}, sum = 4;
+package dynamic_programming;
+
+// input,  coins[] = {1,2,3}, sum = 4;
 // output, 4
 
 public class CoinChangeProblem {

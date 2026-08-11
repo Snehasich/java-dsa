@@ -1,4 +1,4 @@
-package dsa.queue;
+package queue;
 
 // Queue Basics
 // Concept: FIFO structure, enqueue/dequeue using array.

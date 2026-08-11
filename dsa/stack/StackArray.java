@@ -1,4 +1,4 @@
-package dsa.stack;
+package stack;
 
 // Problem: Implement Stack using Array – GFG
 

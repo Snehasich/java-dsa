@@ -1,4 +1,4 @@
-package dsa.linkedlist;
+package linkedlist;
 
 // Task: Create Node class and LinkedList class with insertAtEnd(), printList().
 

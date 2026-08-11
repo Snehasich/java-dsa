@@ -1,5 +1,6 @@
+package arrays;
 
-package arrays;// GOOGLE
+// GOOGLE
 
 import java.util.ArrayList;
 import java.util.Arrays;

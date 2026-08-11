@@ -1,4 +1,6 @@
-package arrays;// MICROSOFT
+package arrays;
+
+// MICROSOFT
 
 import java.util.ArrayList;
 import java.util.Arrays;

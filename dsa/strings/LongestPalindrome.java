@@ -1,4 +1,4 @@
-package dsa.strings;
+package strings;
 
 public class LongestPalindrome {
     public static void main(String[] args) {

@@ -1,4 +1,6 @@
-package dsa.recursion;// n = 41, k = 3
+package recursion;
+
+// n = 41, k = 3
 // output , 31
 
 public class JosephusProblem {

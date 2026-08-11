@@ -1,4 +1,6 @@
-package binary_search;// FACEBOOK QUESTION
+package binary_search;
+
+// FACEBOOK QUESTION
 
 import java.util.Arrays;
 

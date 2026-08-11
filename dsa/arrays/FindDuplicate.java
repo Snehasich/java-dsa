@@ -1,4 +1,6 @@
-package arrays;//  MICRODOFT
+package arrays;
+
+//  MICRODOFT
 
 import java.util.Arrays;
 

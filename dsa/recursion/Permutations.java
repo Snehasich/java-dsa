@@ -1,4 +1,4 @@
-package dsa.recursion;
+package recursion;
 
 public class Permutations {
     public static void main(String[] args) {

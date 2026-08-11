@@ -1,4 +1,6 @@
-package binary_search;// AMAZON QUESTION
+package binary_search;
+
+// AMAZON QUESTION
 
 public class InfiniteArray {
 

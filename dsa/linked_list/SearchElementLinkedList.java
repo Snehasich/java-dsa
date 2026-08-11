@@ -1,4 +1,4 @@
-package dsa.linkedlist;
+package linkedlist;
 
 // Problem: Search an element in a Linked List
 

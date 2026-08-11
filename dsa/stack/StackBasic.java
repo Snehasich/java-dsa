@@ -1,4 +1,4 @@
-package dsa.stack;
+package stack;
 
 // Day 38 – Stack Basics
 // Concept: LIFO structure, operations (push, pop, peek), using array.

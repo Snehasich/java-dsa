@@ -1,4 +1,6 @@
-package arrays;//  GOOGLE
+package arrays;
+
+// GOOGLE
 
 public class SplitArray {
     public static void main(String[] args) {

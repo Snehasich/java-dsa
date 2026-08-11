@@ -1,4 +1,6 @@
-package binary_search;// count how many times did it rotated
+package binary_search;
+
+// count how many times did it rotated
 
 public class RotationCount {
     public static void main(String[] args) {
