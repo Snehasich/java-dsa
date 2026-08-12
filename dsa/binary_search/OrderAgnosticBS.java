@@ -22,13 +22,13 @@ public class OrderAgnosticBS {
                 return mid;
             }
 
-            if(isAsc) {
+            if(isAsc) {                     // ascending order
                 if(target < arr[mid]) {
                     end = mid - 1;
                 } else {
                     start = mid + 1;
                 }
-            } else {
+            } else {                        // descending order
                 if(target > arr[mid]) {
                     end = mid - 1;
                 } else {
