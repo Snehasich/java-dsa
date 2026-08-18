@@ -1,0 +1,439 @@
+JAVA BASICS - INTERVIEW NOTES
+=============================
+
+
+1. LOOPS
+========
+
+Loop = Used to repeat code multiple times.
+
+Types:
+1. for loop
+2. while loop
+3. do-while loop
+4. enhanced for loop
+
+
+FOR LOOP
+--------
+Use when you know how many times to repeat.
+
+Example:
+for(int i = 0; i < 5; i++) {
+    System.out.println(i);
+}
+
+Output:
+0 1 2 3 4
+
+Remember:
+for = Fixed/repeated number of times
+
+
+WHILE LOOP
+----------
+Use when condition decides how long to run.
+
+Example:
+int i = 0;
+
+while(i < 5) {
+    System.out.println(i);
+    i++;
+}
+
+Remember:
+while = Check condition first
+
+
+DO-WHILE
+--------
+Runs at least ONE time.
+
+Example:
+int i = 0;
+
+do {
+    System.out.println(i);
+    i++;
+} while(i < 5);
+
+Remember:
+do-while = Execute first, check later
+
+
+ENHANCED FOR LOOP
+-----------------
+Used to easily access elements of array/collection.
+
+Example:
+int[] nums = {10, 20, 30};
+
+for(int n : nums) {
+    System.out.println(n);
+}
+
+Remember:
+for-each = Easy way to visit every element
+
+
+
+2. ARRAYS
+=========
+
+Array = Stores multiple values of the SAME type.
+
+Example:
+int[] nums = {10, 20, 30, 40};
+
+Access:
+nums[0] -> 10
+nums[1] -> 20
+
+Length:
+nums.length -> 4
+
+Example:
+for(int i = 0; i < nums.length; i++) {
+    System.out.println(nums[i]);
+}
+
+Remember:
+Array = Fixed size + Same type
+
+Important:
+Index starts from 0.
+
+
+
+3. STRINGS
+==========
+
+String = Sequence of characters.
+
+Example:
+String name = "Rahul";
+
+Common methods:
+
+name.length()       -> length
+name.charAt(0)      -> first character
+name.toUpperCase()  -> uppercase
+name.toLowerCase()  -> lowercase
+name.equals("Rahul") -> compare
+name.contains("ah") -> check text
+name.substring(1,3) -> part of string
+
+Example:
+String s = "Java";
+
+s.length();       // 4
+s.charAt(0);      // J
+s.toUpperCase();  // JAVA
+
+IMPORTANT:
+Use .equals() to compare Strings.
+
+Correct:
+s1.equals(s2)
+
+Avoid:
+s1 == s2
+
+Remember:
+String = Text
+
+
+
+4. METHODS
+==========
+
+Method = Block of code that performs a specific task.
+
+Example:
+
+static void greet() {
+    System.out.println("Hello");
+}
+
+Call:
+greet();
+
+Method with parameters:
+
+static int add(int a, int b) {
+    return a + b;
+}
+
+int result = add(10, 20);
+
+Remember:
+Method = Reusable piece of code
+
+Basic structure:
+
+returnType methodName(parameters) {
+    // code
+}
+
+
+
+5. STRINGBUILDER
+================
+
+StringBuilder = Used to modify strings efficiently.
+
+String is immutable.
+StringBuilder is mutable.
+
+Example:
+
+StringBuilder sb = new StringBuilder("Java");
+
+sb.append(" Programming");
+
+System.out.println(sb);
+
+Output:
+Java Programming
+
+Common methods:
+
+append()  -> Add text
+insert()  -> Insert text
+delete()  -> Delete text
+reverse() -> Reverse text
+toString() -> Convert to String
+
+Example:
+
+StringBuilder sb = new StringBuilder("Java");
+
+sb.append("!");
+sb.reverse();
+
+Remember:
+StringBuilder = Easy + fast string modification
+
+Very useful in:
+- String manipulation
+- Loops
+- Coding problems
+
+
+
+6. HASHMAP
+==========
+
+HashMap = Stores data in KEY-VALUE pairs.
+
+Example:
+
+HashMap<String, Integer> map = new HashMap<>();
+
+map.put("Apple", 10);
+map.put("Banana", 20);
+
+System.out.println(map.get("Apple"));
+
+Output:
+10
+
+Common methods:
+
+put(key, value)       -> Add/update
+get(key)              -> Get value
+remove(key)           -> Remove
+containsKey(key)      -> Check key
+size()                -> Number of entries
+
+Example:
+
+map.put("A", 100);
+map.put("B", 200);
+
+map.get("A");  // 100
+
+Remember:
+HashMap = KEY -> VALUE
+
+Example:
+Name -> Phone Number
+
+
+
+7. HASHSET
+==========
+
+HashSet = Stores UNIQUE values.
+
+Duplicates are automatically removed.
+
+Example:
+
+HashSet<Integer> set = new HashSet<>();
+
+set.add(10);
+set.add(20);
+set.add(10);
+
+System.out.println(set);
+
+Output:
+[10, 20]
+
+Common methods:
+
+add()       -> Add
+remove()    -> Remove
+contains()  -> Check
+size()      -> Number of elements
+
+Remember:
+HashSet = UNIQUE values
+
+Important:
+HashSet does NOT guarantee insertion order.
+
+
+
+8. ARRAYLIST
+============
+
+ArrayList = Dynamic/resizable array.
+
+Normal array:
+Fixed size
+
+ArrayList:
+Can grow/shrink
+
+Example:
+
+ArrayList<Integer> list = new ArrayList<>();
+
+list.add(10);
+list.add(20);
+list.add(30);
+
+System.out.println(list.get(0));
+
+Output:
+10
+
+Common methods:
+
+add()       -> Add
+get()       -> Get
+set()       -> Update
+remove()    -> Remove
+contains()  -> Check
+size()      -> Size
+
+Example:
+
+list.add(10);
+list.add(20);
+
+list.set(0, 100);
+
+System.out.println(list);
+
+Output:
+[100, 20]
+
+Remember:
+ArrayList = Dynamic Array
+
+
+
+⭐ QUICK REVISION
+================
+
+Loops
+-> Repeat code
+
+Array
+-> Fixed size, same type
+
+String
+-> Text
+
+Method
+-> Reusable block of code
+
+StringBuilder
+-> Modify strings efficiently
+
+HashMap
+-> Key + Value
+
+HashSet
+-> Unique values
+
+ArrayList
+-> Dynamic array
+
+
+⭐ MOST IMPORTANT DIFFERENCES
+=============================
+
+Array vs ArrayList
+------------------
+Array:
+- Fixed size
+- Can store primitives
+- int[], String[]
+
+ArrayList:
+- Dynamic size
+- Stores objects/wrapper types
+- ArrayList<Integer>
+
+
+HashMap vs HashSet
+------------------
+HashMap:
+Key -> Value
+
+HashSet:
+Only unique values
+
+
+String vs StringBuilder
+-----------------------
+String:
+Immutable
+Cannot directly change existing String
+
+StringBuilder:
+Mutable
+Can modify existing object
+
+
+for vs while
+------------
+for:
+Usually when number of iterations is known
+
+while:
+Usually when condition controls the loop
+
+
+⭐ EASY MEMORY TRICK
+====================
+
+ARRAY      = Fixed
+ARRAYLIST  = Flexible
+
+HASHMAP    = Key + Value
+HASHSET    = Unique
+
+STRING     = Immutable
+STRINGBUILDER = Mutable
+
+FOR        = Known repetitions
+WHILE      = Condition based
+DO-WHILE   = Runs at least once
+
+METHOD     = Reusable code
