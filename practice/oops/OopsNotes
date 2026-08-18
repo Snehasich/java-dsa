@@ -1,0 +1,249 @@
+JAVA OOPs - INTERVIEW NOTES
+============================
+
+1. CLASS & OBJECT
+-----------------
+Class = Blueprint/template.
+Object = Real instance of a class.
+
+Example:
+class Student {
+    String name;
+}
+
+Student s = new Student();
+
+Remember:
+Class = Blueprint
+Object = Real thing
+
+
+2. CONSTRUCTOR
+--------------
+Constructor = Used to initialize an object.
+
+Rules:
+- Same name as class
+- No return type
+- Called automatically when object is created
+
+Example:
+class Student {
+    Student() {
+        System.out.println("Created");
+    }
+}
+
+Student s = new Student();
+
+Remember:
+Constructor = Object initialization
+
+
+3. INHERITANCE
+--------------
+Inheritance = Child class gets properties/methods from parent.
+
+Keyword: extends
+
+Example:
+class Animal {
+    void eat() {
+        System.out.println("Eating");
+    }
+}
+
+class Dog extends Animal {
+}
+
+Remember:
+Parent -> Child
+IS-A relationship
+
+
+4. POLYMORPHISM
+---------------
+Polymorphism = One thing, many forms.
+
+2 types:
+1. Compile-time -> Overloading
+2. Runtime -> Overriding
+
+Remember:
+Poly = Many
+Morph = Forms
+
+
+5. ENCAPSULATION
+----------------
+Encapsulation = Hiding data + controlling access.
+
+Usually:
+private variable + getter/setter
+
+Example:
+class Student {
+    private int age;
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public int getAge() {
+        return age;
+    }
+}
+
+Remember:
+Encapsulation = Data hiding
+
+
+6. ABSTRACTION
+--------------
+Abstraction = Hide implementation details,
+show only important functionality.
+
+Achieved using:
+- abstract class
+- interface
+
+Example:
+abstract class Animal {
+    abstract void sound();
+}
+
+Remember:
+Abstraction = WHAT to do
+Hide = HOW it is done
+
+
+7. INTERFACE
+------------
+Interface = Contract/rules for a class.
+
+Keyword:
+implements
+
+Example:
+interface Animal {
+    void sound();
+}
+
+class Dog implements Animal {
+    public void sound() {
+        System.out.println("Bark");
+    }
+}
+
+Remember:
+Interface = Contract
+
+
+8. OVERLOADING
+--------------
+Same method name + different parameters.
+
+Example:
+class Calculator {
+
+    int add(int a, int b) {
+        return a + b;
+    }
+
+    int add(int a, int b, int c) {
+        return a + b + c;
+    }
+}
+
+Remember:
+Overloading = Same name + Different parameters
+Compile-time polymorphism
+
+
+9. OVERRIDING
+-------------
+Child class gives its own implementation
+of parent method.
+
+Example:
+class Animal {
+    void sound() {
+        System.out.println("Animal sound");
+    }
+}
+
+class Dog extends Animal {
+    @Override
+    void sound() {
+        System.out.println("Bark");
+    }
+}
+
+Remember:
+Overriding = Parent method changed by Child
+Runtime polymorphism
+
+
+10. OVERLOADING vs OVERRIDING
+-----------------------------
+
+OVERLOADING:
+- Same method name
+- Different parameters
+- Usually same class
+- Compile-time
+
+OVERRIDING:
+- Parent + Child
+- Same method signature
+- Child changes parent method
+- Runtime
+
+
+⭐ QUICK REVISION
+=================
+
+Class       -> Blueprint
+Object      -> Real instance
+Constructor -> Initialize object
+Inheritance -> Parent -> Child
+Polymorphism-> Many forms
+Encapsulation-> Data hiding
+Abstraction -> Hide implementation
+Interface   -> Contract
+Overloading -> Same name, different parameters
+Overriding  -> Child changes parent method
+
+
+⭐ INTERVIEW ONE-LINERS
+======================
+
+Q: What is OOP?
+A: OOP is a programming approach based on objects and classes.
+
+Q: What is a class?
+A: A class is a blueprint for creating objects.
+
+Q: What is an object?
+A: An object is an instance of a class.
+
+Q: What is inheritance?
+A: Inheritance allows a child class to reuse parent class properties and methods.
+
+Q: What is polymorphism?
+A: Polymorphism means one thing can have many forms.
+
+Q: What is encapsulation?
+A: Encapsulation means hiding data and providing controlled access.
+
+Q: What is abstraction?
+A: Abstraction means hiding implementation details and showing only necessary functionality.
+
+Q: What is an interface?
+A: An interface is a contract that a class must follow.
+
+Q: What is overloading?
+A: Same method name with different parameters.
+
+Q: What is overriding?
+A: Child class provides its own implementation of a parent method.
