@@ -1,4 +1,4 @@
-package companies;
+package companies.ibm;
 
 public class Binary_encoded_expression {
 

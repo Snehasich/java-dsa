@@ -1,7 +1,4 @@
-package companies;
-
-import java.util.Arrays;
-import java.util.HashSet;
+package companies.ibm;
 
 public class Ordering_List_Dates {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package companies;
+package companies.ibm;
 
 public class absolute_sum_diagonal {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package companies;
+package companies.ibm;
 
 public class HCF {
     public static void main(String[] args) {

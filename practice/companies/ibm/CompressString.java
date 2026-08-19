@@ -1,4 +1,4 @@
-package companies;
+package companies.ibm;
 
 import java.util.*;
 

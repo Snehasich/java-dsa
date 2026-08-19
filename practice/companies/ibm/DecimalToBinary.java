@@ -1,6 +1,4 @@
-package companies;
-
-import java.util.*;
+package companies.ibm;
 
 public class DecimalToBinary {
 

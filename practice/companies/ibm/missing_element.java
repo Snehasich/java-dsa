@@ -1,6 +1,4 @@
-package companies;
-
-import java.util.*;
+package companies.ibm;
 
 public class missing_element {
     public static void main(String[] args) {

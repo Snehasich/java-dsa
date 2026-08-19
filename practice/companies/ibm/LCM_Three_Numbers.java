@@ -1,4 +1,4 @@
-package companies;
+package companies.ibm;
 
 public class LCM_Three_Numbers {
     public static void main(String[] args) {
