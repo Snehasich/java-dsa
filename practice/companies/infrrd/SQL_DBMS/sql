@@ -1,0 +1,435 @@
+==================================================
+              SQL INTERVIEW NOTES
+==================================================
+
+1. WHAT IS SQL?
+----------------
+SQL = Structured Query Language.
+
+Used to communicate with a relational database.
+
+Used for:
+- Reading data
+- Inserting data
+- Updating data
+- Deleting data
+
+
+==================================================
+2. SELECT
+==================================================
+
+Used to get data.
+
+SELECT * FROM employee;
+
+→ Get all columns.
+
+SELECT name FROM employee;
+
+→ Get only name.
+
+SELECT name, salary
+FROM employee;
+
+→ Get name and salary.
+
+
+==================================================
+3. WHERE
+==================================================
+
+Used to filter rows.
+
+SELECT *
+FROM employee
+WHERE salary > 50000;
+
+→ Employees whose salary is greater than 50000.
+
+Operators:
+
+=   → Equal
+>   → Greater
+<   → Less
+>=  → Greater/equal
+<=  → Less/equal
+<>  → Not equal
+
+
+==================================================
+4. DISTINCT
+==================================================
+
+Removes duplicate results.
+
+SELECT DISTINCT department
+FROM employee;
+
+
+==================================================
+5. ORDER BY
+==================================================
+
+Used to sort data.
+
+Ascending:
+
+SELECT *
+FROM employee
+ORDER BY salary ASC;
+
+Descending:
+
+SELECT *
+FROM employee
+ORDER BY salary DESC;
+
+ASC  → Small to large
+DESC → Large to small
+
+
+==================================================
+6. COUNT()
+==================================================
+
+Counts rows.
+
+SELECT COUNT(*)
+FROM employee;
+
+
+==================================================
+7. MAX()
+==================================================
+
+Finds highest value.
+
+SELECT MAX(salary)
+FROM employee;
+
+
+==================================================
+8. MIN()
+==================================================
+
+Finds lowest value.
+
+SELECT MIN(salary)
+FROM employee;
+
+
+==================================================
+9. SUM()
+==================================================
+
+Adds values.
+
+SELECT SUM(salary)
+FROM employee;
+
+
+==================================================
+10. AVG()
+==================================================
+
+Finds average.
+
+SELECT AVG(salary)
+FROM employee;
+
+
+==================================================
+11. GROUP BY
+==================================================
+
+Creates groups.
+
+SELECT department, COUNT(*)
+FROM employee
+GROUP BY department;
+
+Example:
+
+IT → 3
+HR → 2
+
+Remember:
+
+GROUP BY = MAKE GROUPS
+
+
+==================================================
+12. HAVING
+==================================================
+
+Filters groups.
+
+SELECT department, COUNT(*)
+FROM employee
+GROUP BY department
+HAVING COUNT(*) > 2;
+
+Remember:
+
+WHERE  → Filter rows
+HAVING → Filter groups
+
+
+==================================================
+13. LIKE
+==================================================
+
+Used for pattern matching.
+
+Starts with A:
+
+WHERE name LIKE 'A%';
+
+Ends with A:
+
+WHERE name LIKE '%a';
+
+Contains A:
+
+WHERE name LIKE '%a%';
+
+% → Any number of characters
+_ → One character
+
+
+==================================================
+14. IN
+==================================================
+
+Checks multiple values.
+
+SELECT *
+FROM employee
+WHERE department IN ('IT', 'HR');
+
+
+==================================================
+15. BETWEEN
+==================================================
+
+Checks a range.
+
+SELECT *
+FROM employee
+WHERE salary BETWEEN 30000 AND 50000;
+
+
+==================================================
+16. AND
+==================================================
+
+Both conditions must be true.
+
+SELECT *
+FROM employee
+WHERE salary > 40000
+AND department = 'IT';
+
+
+==================================================
+17. OR
+==================================================
+
+At least one condition must be true.
+
+SELECT *
+FROM employee
+WHERE department = 'IT'
+OR department = 'HR';
+
+
+==================================================
+18. NULL
+==================================================
+
+NULL = Missing/unknown value.
+
+Check NULL:
+
+WHERE salary IS NULL;
+
+Check NOT NULL:
+
+WHERE salary IS NOT NULL;
+
+IMPORTANT:
+
+Wrong:
+salary = NULL
+
+Correct:
+salary IS NULL
+
+
+==================================================
+19. INSERT
+==================================================
+
+Adds new data.
+
+INSERT INTO employee
+(id, name, salary)
+VALUES
+(4, 'John', 45000);
+
+
+==================================================
+20. UPDATE
+==================================================
+
+Changes existing data.
+
+UPDATE employee
+SET salary = 60000
+WHERE id = 1;
+
+
+==================================================
+21. DELETE
+==================================================
+
+Deletes rows.
+
+DELETE FROM employee
+WHERE id = 4;
+
+
+==================================================
+22. JOIN
+==================================================
+
+JOIN combines data from multiple tables.
+
+Example:
+
+Employee
+----------------
+id
+name
+dept_id
+
+Department
+----------------
+dept_id
+dept_name
+
+
+==================================================
+23. INNER JOIN
+==================================================
+
+Returns matching records from both tables.
+
+SELECT e.name, d.dept_name
+FROM employee e
+INNER JOIN department d
+ON e.dept_id = d.dept_id;
+
+Remember:
+
+INNER JOIN = MATCHING DATA
+
+
+==================================================
+24. LEFT JOIN
+==================================================
+
+Returns:
+
+All rows from LEFT table
++
+Matching rows from RIGHT table.
+
+SELECT e.name, d.dept_name
+FROM employee e
+LEFT JOIN department d
+ON e.dept_id = d.dept_id;
+
+Remember:
+
+LEFT JOIN = KEEP EVERYTHING FROM LEFT
+
+
+==================================================
+25. SQL QUERY ORDER
+==================================================
+
+SELECT
+FROM
+WHERE
+GROUP BY
+HAVING
+ORDER BY
+
+Example:
+
+SELECT department, COUNT(*)
+FROM employee
+WHERE salary > 30000
+GROUP BY department
+HAVING COUNT(*) > 2
+ORDER BY COUNT(*) DESC;
+
+
+Easy memory:
+
+FROM
+ ↓
+WHERE
+ ↓
+GROUP BY
+ ↓
+HAVING
+ ↓
+SELECT
+ ↓
+ORDER BY
+
+
+==================================================
+26. IMPORTANT DIFFERENCES
+==================================================
+
+WHERE vs HAVING
+
+WHERE  → Filters rows
+HAVING → Filters groups
+
+
+INNER JOIN vs LEFT JOIN
+
+INNER JOIN → Matching rows
+LEFT JOIN  → All left + matching right
+
+
+DELETE vs TRUNCATE vs DROP
+
+DELETE    → Delete rows
+TRUNCATE  → Delete all rows
+DROP      → Delete table
+
+
+==================================================
+27. MUST REMEMBER
+==================================================
+
+SELECT   → Get data
+WHERE    → Filter rows
+DISTINCT → Remove duplicates
+ORDER BY → Sort
+GROUP BY → Create groups
+HAVING   → Filter groups
+COUNT    → Count
+SUM      → Total
+AVG      → Average
+MAX      → Highest
+MIN      → Lowest
+JOIN     → Combine tables
+
+==================================================

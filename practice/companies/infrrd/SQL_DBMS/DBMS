@@ -1,0 +1,625 @@
+==================================================
+             DBMS INTERVIEW NOTES
+==================================================
+
+1. WHAT IS DBMS?
+==================================================
+
+DBMS = Database Management System.
+
+Software used to:
+- Store data
+- Manage data
+- Update data
+- Delete data
+- Retrieve data
+
+Examples:
+
+MySQL
+Oracle
+PostgreSQL
+SQL Server
+
+Interview answer:
+
+"DBMS is software used to store, manage and
+retrieve data from a database."
+
+
+==================================================
+2. DATABASE
+==================================================
+
+Database = Organized collection of data.
+
+Example:
+
+Employee Database
+
+ID | Name  | Salary
+-------------------
+1  | Rahul | 50000
+2  | Amit  | 40000
+
+
+==================================================
+3. TABLE
+==================================================
+
+Table stores data in:
+
+Rows + Columns
+
+Row    → One record
+Column → One field
+
+
+==================================================
+4. ROW
+==================================================
+
+A row represents one complete record.
+
+Example:
+
+1 | Rahul | 50000
+
+This represents one employee.
+
+
+==================================================
+5. COLUMN
+==================================================
+
+A column represents one type of information.
+
+Example:
+
+ID
+Name
+Salary
+
+
+==================================================
+6. RDBMS
+==================================================
+
+RDBMS = Relational Database Management System.
+
+It stores data in tables and allows relationships
+between tables.
+
+Examples:
+
+MySQL
+Oracle
+PostgreSQL
+SQL Server
+
+Remember:
+
+DBMS  → Manages databases
+RDBMS → Manages related tables
+
+
+==================================================
+7. DBMS vs RDBMS
+==================================================
+
+DBMS:
+→ Database management system
+→ Manages data
+
+RDBMS:
+→ Uses tables
+→ Tables can have relationships
+→ Uses keys
+→ Follows relational model
+
+
+==================================================
+8. PRIMARY KEY
+==================================================
+
+Uniquely identifies each row.
+
+Example:
+
+ID | Name
+---------
+1  | Rahul
+2  | Amit
+
+ID = Primary Key
+
+Properties:
+
+- Unique
+- Cannot be NULL
+
+Remember:
+
+PRIMARY KEY = UNIQUE ID
+
+
+==================================================
+9. FOREIGN KEY
+==================================================
+
+Connects two tables.
+
+Example:
+
+Employee
+---------
+id
+name
+dept_id
+
+Department
+----------
+dept_id
+dept_name
+
+dept_id connects the tables.
+
+Remember:
+
+FOREIGN KEY = CONNECTION
+
+
+==================================================
+10. PRIMARY KEY vs FOREIGN KEY
+==================================================
+
+Primary Key:
+→ Identifies a row
+→ Unique
+→ Cannot be NULL
+
+Foreign Key:
+→ Connects tables
+→ Can contain duplicate values
+
+
+==================================================
+11. NULL
+==================================================
+
+NULL means missing/unknown value.
+
+Example:
+
+Name  | Salary
+--------------
+Rahul | 50000
+Amit  | NULL
+
+Check:
+
+IS NULL
+
+IS NOT NULL
+
+
+==================================================
+12. CONSTRAINTS
+==================================================
+
+Constraints are rules applied to table columns.
+
+Important constraints:
+
+PRIMARY KEY
+FOREIGN KEY
+NOT NULL
+UNIQUE
+DEFAULT
+CHECK
+
+
+==================================================
+13. NOT NULL
+==================================================
+
+Column cannot contain NULL.
+
+Example:
+
+name VARCHAR(50) NOT NULL
+
+
+==================================================
+14. UNIQUE
+==================================================
+
+Prevents duplicate values.
+
+Example:
+
+email VARCHAR(100) UNIQUE
+
+
+==================================================
+15. DEFAULT
+==================================================
+
+Provides a default value.
+
+Example:
+
+status VARCHAR(20)
+DEFAULT 'Active'
+
+
+==================================================
+16. CHECK
+==================================================
+
+Checks a condition.
+
+Example:
+
+CHECK (salary > 0)
+
+
+==================================================
+17. NORMALIZATION
+==================================================
+
+Normalization organizes data to:
+
+- Reduce duplicate data
+- Avoid data inconsistency
+- Improve database structure
+
+Remember:
+
+NORMALIZATION = REDUCE DUPLICATION
+
+
+==================================================
+18. 1NF
+==================================================
+
+First Normal Form.
+
+Each column should contain atomic/single values.
+
+Remember:
+
+1NF = ATOMIC VALUES
+
+
+==================================================
+19. 2NF
+==================================================
+
+Must be in 1NF.
+
+Also removes partial dependency.
+
+Remember:
+
+2NF = 1NF + NO PARTIAL DEPENDENCY
+
+
+==================================================
+20. 3NF
+==================================================
+
+Must be in 2NF.
+
+Also removes transitive dependency.
+
+Remember:
+
+3NF = 2NF + NO TRANSITIVE DEPENDENCY
+
+
+==================================================
+21. TRANSACTION
+==================================================
+
+A transaction is a group of database operations
+treated as one unit.
+
+Example:
+
+Money transfer:
+
+1. Remove money from A
+2. Add money to B
+
+Both should happen successfully.
+
+
+==================================================
+22. ACID
+==================================================
+
+ACID = Four properties of transactions.
+
+A = Atomicity
+C = Consistency
+I = Isolation
+D = Durability
+
+
+Atomicity:
+→ All or nothing
+
+Consistency:
+→ Data remains valid
+
+Isolation:
+→ Transactions don't incorrectly interfere
+
+Durability:
+→ Committed data remains saved
+
+
+Easy memory:
+
+A → All or nothing
+C → Correct data
+I → Independent
+D → Data stays
+
+
+==================================================
+23. COMMIT
+==================================================
+
+Saves transaction changes.
+
+COMMIT;
+
+
+==================================================
+24. ROLLBACK
+==================================================
+
+Undoes uncommitted changes.
+
+ROLLBACK;
+
+
+==================================================
+25. DELETE
+==================================================
+
+Removes rows.
+
+DELETE FROM employee
+WHERE id = 5;
+
+
+==================================================
+26. TRUNCATE
+==================================================
+
+Removes all rows but keeps table structure.
+
+TRUNCATE TABLE employee;
+
+
+==================================================
+27. DROP
+==================================================
+
+Removes the table itself.
+
+DROP TABLE employee;
+
+
+==================================================
+28. DELETE vs TRUNCATE vs DROP
+==================================================
+
+DELETE:
+→ Removes rows
+→ WHERE can be used
+
+TRUNCATE:
+→ Removes all rows
+→ Keeps table
+
+DROP:
+→ Removes entire table
+
+
+Easy memory:
+
+DELETE    → ROWS
+TRUNCATE  → ALL ROWS
+DROP      → TABLE
+
+
+==================================================
+29. INDEX
+==================================================
+
+Index helps the database find data faster.
+
+Think:
+
+Index = Faster searching
+
+Example:
+
+Instead of checking every row,
+the database can use an index to locate
+data more efficiently.
+
+Important:
+
+Index can improve SELECT performance,
+but indexes also require storage and can add
+overhead to INSERT/UPDATE/DELETE.
+
+
+==================================================
+30. JOIN
+==================================================
+
+JOIN combines data from multiple tables.
+
+Important types:
+
+INNER JOIN
+LEFT JOIN
+RIGHT JOIN
+FULL OUTER JOIN
+
+
+For beginner interviews, know:
+
+INNER JOIN
+LEFT JOIN
+
+
+==================================================
+31. INNER JOIN
+==================================================
+
+Returns only matching records.
+
+Remember:
+
+INNER = MATCH
+
+
+==================================================
+32. LEFT JOIN
+==================================================
+
+Returns:
+
+All records from left table
++
+Matching records from right table.
+
+Remember:
+
+LEFT = KEEP LEFT
+
+
+==================================================
+33. DBMS INTERVIEW QUESTIONS
+==================================================
+
+Q: What is DBMS?
+
+A:
+"DBMS is software used to store, manage and
+retrieve data from a database."
+
+
+Q: What is RDBMS?
+
+A:
+"RDBMS is a DBMS that stores data in related
+tables."
+
+
+Q: What is Primary Key?
+
+A:
+"A primary key uniquely identifies each row
+in a table."
+
+
+Q: What is Foreign Key?
+
+A:
+"A foreign key is used to establish a relationship
+between tables."
+
+
+Q: What is normalization?
+
+A:
+"Normalization is the process of organizing data
+to reduce redundancy and improve consistency."
+
+
+Q: What is ACID?
+
+A:
+"ACID stands for Atomicity, Consistency,
+Isolation and Durability."
+
+
+Q: What is a transaction?
+
+A:
+"A transaction is a group of database operations
+treated as a single unit."
+
+
+Q: DELETE vs TRUNCATE vs DROP?
+
+A:
+
+DELETE    → Removes rows
+TRUNCATE  → Removes all rows
+DROP      → Removes table
+
+
+Q: DBMS vs RDBMS?
+
+A:
+
+DBMS  → Manages database
+RDBMS → Manages related tables
+
+
+==================================================
+34. MUST REMEMBER
+==================================================
+
+DBMS
+→ Manages database
+
+RDBMS
+→ Related tables
+
+PRIMARY KEY
+→ Unique ID
+
+FOREIGN KEY
+→ Connect tables
+
+NORMALIZATION
+→ Reduce duplication
+
+TRANSACTION
+→ Group of operations
+
+ACID
+→ Safe transactions
+
+INDEX
+→ Faster searching
+
+DELETE
+→ Rows
+
+TRUNCATE
+→ All rows
+
+DROP
+→ Table
+
+1NF
+→ Atomic values
+
+2NF
+→ No partial dependency
+
+3NF
+→ No transitive dependency
+
+==================================================
