@@ -1,0 +1,29 @@
+Class
+→ Blueprint for objects
+
+Object
+→ Instance of a class
+
+Constructor
+→ Initializes an object
+
+Inheritance
+→ Child gets properties/methods from parent
+
+Polymorphism
+→ One thing, many forms    (override, overloading)
+
+Encapsulation
+→ Hide data and control access    (private, public, protected, default)
+
+Abstraction
+→ Hide implementation, show essential details
+
+Interface
+→ Contract that a class implements
+
+Overloading
+→ Same method name, different parameters
+
+Overriding
+→ Child changes parent method implementation
