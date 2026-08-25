@@ -2,7 +2,7 @@ package companies.infrrd.arrays;
 
 public class Missing_Number {
     public static void main(String[] args) {
-        int[] arr = {1, 2, 3, 5};
+        int[] arr = {1, 2, 3, 5, 5};
 
         System.out.println(missingnum(arr));
     }
@@ -10,8 +10,7 @@ public class Missing_Number {
     static int missingnum(int[] arr){
         int[] ans = new int[arr.length];
 
-        for(int i = 0; i < arr.length; i++) {
-            if(arr[i] - 1 != i) continue;
+        for(int i = 0; i < arr.length-1; i++) {
             ans[arr[i] - 1] = 1;
         }
 
