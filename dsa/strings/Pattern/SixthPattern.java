@@ -1,6 +1,17 @@
+package strings.Pattern;
 
+//**********
+//****  ****
+//***    ***
+//**      **
+//*        *
+//*        *
+//**      **
+//***    ***
+//****  ****
+//**********
 
-public class pattern {
+public class SixthPattern {
     public static void main(String[] args) {
         int n = 5;
 
