@@ -1,4 +1,4 @@
-package companies.ibm;
+package companies.ibm.Solve_This;
 
 // https://leetcode.com/problems/trapping-rain-water/description/
 

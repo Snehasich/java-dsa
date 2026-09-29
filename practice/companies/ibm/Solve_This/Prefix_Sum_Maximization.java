@@ -1,4 +1,4 @@
-package companies.ibm;
+package companies.ibm.Solve_This;
 
 public class Prefix_Sum_Maximization {
 

@@ -1,4 +1,4 @@
-package companies.ibm;
+package companies.ibm.Solve_This;
 
 public class Search_In_Rotated_Array_33 {
     public static void main(String[] args) {
