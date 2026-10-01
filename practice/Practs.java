@@ -1,38 +1,32 @@
+import java.util.*;
+import java.util.Arrays;
+
 public class Practs {
     public static void main(String[] args) {
-        int[] arr = {5, 10, 15, 20, 18, 14, 9, 4};
+        //Input: nums = [1, 2, 3, 4, 5, 6], k = 2
+        //Output: nums = [3, 4, 5, 6, 1, 2]
 
-        System.out.println(search(arr, 14));
+        int[] arr = {1,2,3,4,5,6};
+        rotateArray(arr, 2);
     }
 
-    static String search(int[] arr, int target) {
-        int ans = 0;
-        int idx = 0;
+    static void rotateArray(int[] nums, int k) {
+        int n = nums.length;
+        k = k % n;
 
-        for (int i = 0; i < arr.length; i++) {
-//            int left = i - 1;
-//            int right = i + 1;
+        reverse(nums, 0, k-1);
+        reverse(nums, k, n-1);
+        reverse(nums, 0, n-1);
+    }
 
-            if(i == 0 || i == arr.length-1) continue;
+    static void reverse(int[] nums, int left, int right) {
+        while(left < right) {
+            int temp = nums[left];
+            nums[left] = nums[right];
+            nums[right] = temp;
 
-//            if(arr[left] > arr[i]) {
-//                ans = arr[left];
-//                idx = left;
-//                break;
-//            }
-//
-//            if(arr[right] < arr[i]) {
-//                ans = arr[i];
-//                idx = i;
-//                break;
-//            }
-
-            if(arr[i] == target) {
-                idx = i;
-                ans = arr[i];
-            }
+            left++;
+            right--;
         }
-
-        return "ans : " + ans + ", and index : " + idx;
     }
 }
