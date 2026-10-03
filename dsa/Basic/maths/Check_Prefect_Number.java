@@ -1,5 +1,7 @@
 package Basic.maths;
 
+// 6 -> 1 + 2 + 3
+
 public class Check_Prefect_Number {
     public static void main(String[] args) {
         System.out.println(isPerfect(6));

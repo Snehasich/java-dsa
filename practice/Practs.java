@@ -1,6 +1,3 @@
-import java.util.*;
-import java.util.Arrays;
-
 public class Practs {
     public static void main(String[] args) {
         //Input: nums = [1, 2, 3, 4, 5, 6], k = 2
