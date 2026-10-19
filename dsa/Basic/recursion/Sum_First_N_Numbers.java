@@ -10,6 +10,6 @@ public class Sum_First_N_Numbers {
     static int NnumbersSum(int N) {
         if(N == 0) return N;
 
-        return N += NnumbersSum(N - 1);
+        return N + NnumbersSum(N - 1);
     }
 }
