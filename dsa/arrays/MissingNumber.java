@@ -12,32 +12,16 @@ class MissingNumber {
         System.out.println(Arrays.toString(arr));
     }
 
-    public static int missingNumber(int[] arr) {
-        int i=0;
-        while(i < arr.length) {
-            int correct = arr[i];
-            if(arr[i] < arr.length && arr[i] != arr[correct]) {
-                swap(arr,i,correct);
-            } else {
-                i++;
-            }
+    public static int missingNumber(int[] nums) {
+        int sum = 0;
+        int n = nums.length;
+        int original = n * (n + 1) / 2;
+
+        for(int num : nums) {
+            sum += num;
         }
 
-        // search for first missing number
-        for(int index = 0; index < arr.length; index++) {
-            if(arr[index] != index) {
-                return index;
-            }
-        }
-
-        // case2
-        return arr.length;
-    }
-
-    static void swap(int[] arr, int start, int end) {
-        int temp = arr[start];
-        arr[start] = arr[end];
-        arr[end] = temp;
+        return original - sum;
     }
 
 }

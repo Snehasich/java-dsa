@@ -1,29 +1,39 @@
+import javax.swing.*;
+
 public class Practs {
     public static void main(String[] args) {
-        //Input: nums = [1, 2, 3, 4, 5, 6], k = 2
-        //Output: nums = [3, 4, 5, 6, 1, 2]
+        int[] arr = {3,0,1};
 
-        int[] arr = {1,2,3,4,5,6};
-        rotateArray(arr, 2);
+        System.out.println(missingNumber(arr));
     }
 
-    static void rotateArray(int[] nums, int k) {
-        int n = nums.length;
-        k = k % n;
+    static int missingNumber(int[] arr) {
+//        int k = 0;
 
-        reverse(nums, 0, k-1);
-        reverse(nums, k, n-1);
-        reverse(nums, 0, n-1);
+//        for(int i=0; i<arr.length; i++) {
+//            for(int j=0; j<arr.length; j++) {
+//                if(arr[j] == k) {
+//                    k++;
+//                }
+//            }
+//        }
+
+
+
+        return check(arr, 0);
     }
 
-    static void reverse(int[] nums, int left, int right) {
-        while(left < right) {
-            int temp = nums[left];
-            nums[left] = nums[right];
-            nums[right] = temp;
-
-            left++;
-            right--;
+    static int check(int[] arr, int n) {
+        if(arr.length == n) {
+            return n;
         }
+
+        for (int num : arr) {
+            if (num == n) {
+                return check(arr, n + 1);
+            }
+        }
+
+        return n;
     }
 }
